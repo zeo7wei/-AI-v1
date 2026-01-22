@@ -63,3 +63,25 @@ exports.handler = async function(event, context) {
     };
   }
 };
+```
+
+5. **点击 "Commit new file"**
+
+### 2. 等待Netlify自动重新部署
+- 在Netlify的 "Deploys" 标签查看进度
+- 1-2分钟后部署完成
+
+### 3. 验证Functions已激活
+- 在Netlify点击 **"Functions"** 标签
+- 应该能看到 `qwen-ocr` 函数
+
+---
+
+## 📋 当前仓库应该有的文件：
+```
+✅ index.html
+✅ netlify.toml  
+✅ README.md
+✅ netlify/
+   └─ functions/
+      └─ qwen-ocr.js
