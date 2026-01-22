@@ -1,6 +1,7 @@
 [build]
-  functions = "netlify/functions"
-  publish = "."
+  base = "netlify-proxy"
+  functions = "netlify-proxy/netlify/functions"
+  publish = "netlify-proxy"
 
 [[redirects]]
   from = "/api/*"
